@@ -1,0 +1,99 @@
+@font-face {
+    font-family: KodomoRounded;
+    src: url("KodomoRounded.otf") format("opentype");
+}
+
+.boardCell {
+  cursor: pointer;
+  height: 160px;
+  width: 160px;
+}
+
+body {
+  background-color: #fff6b5;
+  font-family: KodomoRounded;
+  height: 800px;
+  margin: 30px;
+  min-width: 700px;
+}
+
+button {
+  background-color: #995c2a;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-family: KodomoRounded;
+  font-size: 1.4em;
+  outline: none;
+  padding: 10px;
+}
+
+.cellHighlighted {
+  background-image: radial-gradient(at 50% 50% , #00ffff 0%, #fffdf2 60%);
+}
+
+.cellImage {
+  background-size: cover;
+  margin: auto;
+  transition-duration: 0.05s;
+  transition-property: height, width;
+}
+
+.cellTypeKorilakkuma .cellImage {
+  background-image: url("images/korilakkuma.png");
+  height: 110px;
+  width: 110px;
+}
+
+.cellTypeRilakkuma .cellImage {
+  background-image: url("images/rilakkuma.png");
+  height: 130px;
+  width: 130px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+#kiiroitoriImg {
+  vertical-align: bottom;
+}
+
+#main {
+  background-color: #fffdf2;
+  border-radius: 30px;
+  height: 100%;
+  margin: 30px auto;
+  width: 700px;
+  text-align: center;
+}
+
+#resetButton {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+table td, table th {
+  border: 2px solid #dddddd;
+}
+table tr:first-child td {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+}
+
+#titleWrapper {
+  padding-top: 30px;
+}
